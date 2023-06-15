@@ -1,0 +1,64 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "yellow_tripdata_sample_2019-01.csv.warning",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 10000,
+        "min_value": 10000
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {},
+            "metric_name": "table.row_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_set",
+      "kwargs": {
+        "column_set": [
+          "congestion_surcharge",
+          "tolls_amount",
+          "pickup_datetime",
+          "payment_type",
+          "fare_amount",
+          "tip_amount",
+          "dropoff_location_id",
+          "rate_code_id",
+          "passenger_count",
+          "dropoff_datetime",
+          "store_and_fwd_flag",
+          "total_amount",
+          "trip_distance",
+          "mta_tax",
+          "vendor_id",
+          "improvement_surcharge",
+          "pickup_location_id",
+          "extra"
+        ],
+        "exact_match": null
+      },
+      "meta": {
+        "profiler_details": {
+          "success_ratio": 1.0
+        }
+      }
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "citation_date": "2023-06-15T05:23:01.606701Z",
+        "comment": "Created by effective Rule-Based Profiler of OnboardingDataAssistant with the configuration included.\n"
+      }
+    ],
+    "great_expectations_version": "0.16.16"
+  }
+}
